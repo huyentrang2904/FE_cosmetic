@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Home",
+    "to": "/homepages/homepage1",
+    "subMenu": [
+      { "title": "Tẩy Trang", "to": "/homepages/homepage1" },
+      { "title": "Sữa Rửa Mặt", "to": "/homepages/homepage2" },
+      { "title": "Tẩy Da Chết", "to": "/homepages/homepage3" },
+      { "title": "Nước Hoa Hồng", "to": "/homepages/homepage4" },
+      { "title": "kem Chống Nắng", "to": "/homepages/homepage5" },
+      { "title": "Kem Dưỡng", "to": "/homepages/homepage6" },
+      { "title": "Mặt Nạ", "to": "/homepages/homepage6" },
+      { "title": "Serum", "to": "/homepages/homepage6" }
+    ]
+  },
+  { "title": "Services", "to": "/other/services" },
+  { "title": "About", "to": "/other/about" },
+  
+  { "title": "Blog", "to": "/blog" },
+  { "title": "Contact", "to": "/other/contact" }
+]
