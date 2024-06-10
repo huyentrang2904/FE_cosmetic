@@ -12,8 +12,17 @@ import testimonialOneData from "../../data/testimonial/data.json";
 import TeamOne from "../../components/Sections/Team/TeamOne";
 import teamOneData from "../../data/team/teamOne.json";
 import CTAOne from "../../components/Sections/CallToAction/CTAOne";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import {getDataHomepage1} from "../../redux/actions/homeAction"
 
 export default function homepage1() {
+  // const dispatch = useDispatch()
+  // const dataSlideOne = useSelector(store => store)
+  //   console.log(dataSlideOne)
+  //   useEffect(()=>{
+  //     dispatch(getDataHomepage1())
+  //   },[])
   return (
     <LayoutOne title="Homepage 1" data={sliderData} className="-style-1">
       
