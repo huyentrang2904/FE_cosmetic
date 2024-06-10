@@ -17,19 +17,20 @@ import { useEffect } from "react";
 import {getDataHomepage1} from "../../redux/actions/homeAction"
 
 export default function homepage1() {
-  // const dispatch = useDispatch()
-  // const dataSlideOne = useSelector(store => store)
-  //   console.log(dataSlideOne)
-  //   useEffect(()=>{
-  //     dispatch(getDataHomepage1())
-  //   },[])
+  const dispatch = useDispatch();
+  const dataSlideOne = useSelector((pReducer) => pReducer?.homepage1Reducer?.productHomepage1
+);
+  console.log(dataSlideOne);
+  useEffect(() => {
+    dispatch(getDataHomepage1());
+  }, []);
   return (
     <LayoutOne title="Homepage 1" data={sliderData} className="-style-1">
       
       <SliderTwo data={sliderData} className="-style-1" showDots />
       <IntroductionOne data={introductionOneData} />
       <IntroductionTwo data={introductionTwoData} />
-      <ProductSlideOne data={productSlideOneData} />
+      <ProductSlideOne data={dataSlideOne.listProductBestSeller} />
       <TestimonialOne data={testimonialOneData} />
       <TeamOne data={teamOneData} />
       <CTAOne />

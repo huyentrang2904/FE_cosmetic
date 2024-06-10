@@ -22,6 +22,7 @@ import {
 import AddToCart from "../Control/AddToCart";
 
 function Product({ data, type, className }) {
+  console.log(data)
   const dispatch = useDispatch();
   const cartState = useSelector((state) => state.cartReducer);
   const wishlistData = useSelector((state) => state.wishlistReducer);
@@ -70,10 +71,10 @@ function Product({ data, type, className }) {
               as={`${process.env.PUBLIC_URL}/shop/product/${data.slug}`}
             >
               <a className="product__thumb__image">
-                {data.thumbImage.map((img, index) => (
+                {data?.imageUrls?.map((img, index) => (
                   <img
                     key={index}
-                    src={process.env.PUBLIC_URL + img}
+                    src={img}
                     alt="Product image"
                   />
                 ))}
@@ -187,10 +188,10 @@ function Product({ data, type, className }) {
               as={`${process.env.PUBLIC_URL}/shop/product/${data.slug}`}
             >
               <a className="product-list__thumb__image">
-                {data.thumbImage.map((img, index) => (
+                {data?.imageUrls?.map((img, index) => (
                   <img
                     key={index}
-                    src={process.env.PUBLIC_URL + img}
+                    src={img}
                     alt="Product image"
                   />
                 ))}

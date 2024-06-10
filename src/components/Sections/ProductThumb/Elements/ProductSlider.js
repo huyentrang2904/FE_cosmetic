@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Product from "../../../Product";
 
 export default function ProductSlider({ data, sliderSettings }) {
+  console.log(data)
   return (
     <div className="product-slider">
       <Slider {...sliderSettings}>

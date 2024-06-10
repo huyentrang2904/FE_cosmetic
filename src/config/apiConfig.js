@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_BASE_URL = 'https://cosmetics-web.fly.dev';
+export const API_BASE_URL = 'https://cosmetic-web-pro.fly.dev';
 
 // Hàm để lấy token từ localStorage
 export const getTokenFromLocalStorage = () => {

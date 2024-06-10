@@ -5,9 +5,10 @@ import ProductSlider from "../Elements/ProductSlider";
 import { PrevArrow, NextArrow } from "../../../Other/SliderArrow";
 
 export default function ProductSlideOne({ data }) {
+  console.log(data)
   const settings = {
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 2, //4
     slidesToScroll: 1,
     className: "product-slide__wrapper",
     prevArrow: <PrevArrow />,
@@ -16,13 +17,13 @@ export default function ProductSlideOne({ data }) {
       {
         breakpoint: 1170,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2, //4
         },
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2, //3
         },
       },
       {

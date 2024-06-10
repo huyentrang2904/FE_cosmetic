@@ -13,7 +13,8 @@ export default function homepage1Reducer(state = initialState, action) {
         return {
             ...state,
             isLoading: false, 
-            productHomepage1: action.payload
+            productHomepage1: action.payload,
+            error: action.error
         }
     default:
       return state;
